@@ -62,7 +62,8 @@ Run the command below to generate a sample data quality report:
   python3 generate-data-quality-report.py
   ```
 You should see a list of tests that were run and their status:
- ![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/b86986f8-9e7c-458a-9d73-26f9db435548)
+
+![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/b86986f8-9e7c-458a-9d73-26f9db435548)
 
 
 
