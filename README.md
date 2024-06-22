@@ -1,6 +1,7 @@
 # Hands-on Lab: Verifying Data Quality for a Data Warehouse
 
 Source: Designing, Modeling, and Implementing Data Warehouses Module - Data Warehouses Fundamentals Course by IBM 
+
 Enviroment: Skills Network Cloud IDE (based on Theia and Docker)
 
 ## Purpose of the Lab: 
