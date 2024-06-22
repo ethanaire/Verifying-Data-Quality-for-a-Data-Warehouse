@@ -15,15 +15,16 @@ The primary purpose of this lab is to instruct participants on the process of co
 - Generate a report on data quality
 
 ## Instructions: 
-1. Run the setup script
+###1. Run the setup script
     ```
     bash setup_staging_area.sh
     ```
     
-2. Get the testing framework ready
+###2. Get the testing framework ready
   2.1. Download the framework
+
   Run the commands below to download the framework:
-   ```
+  ```
     wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Verifying%20Data%20Quality%20for%20a%20Data%20Warehouse/dataqualitychecks.py
 
     wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Verifying%20Data%20Quality%20for%20a%20Data%20Warehouse/dbconnect.py
@@ -33,13 +34,16 @@ The primary purpose of this lab is to instruct participants on the process of co
     wget https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DB0260EN-SkillsNetwork/labs/Verifying%20Data%20Quality%20for%20a%20Data%20Warehouse/generate-data-quality-report.py
 
     ls
-    ```
+  ```
+
   2.2. Install the python driver for PostgreSQL
+  
   Run the command below to install the python driver for Postgresql database:
     ```
     python3 -m pip install psycopg2
     ```
   2.3. Test database connectivity
+  
   Now we need to check
   - if the Postgresql python driver is installed properly.
   - if Postgresql server is up and running.
@@ -53,7 +57,7 @@ The primary purpose of this lab is to instruct participants on the process of co
 
   The command also disconnects from the server with a message `Connection closed`.
   
-3. Create a sample data quality report 
+###3. Create a sample data quality report 
 Run the command below to install pandas:
   ```
   python3 -m pip install pandas tabulate
@@ -66,7 +70,7 @@ You should see a list of tests that were run and their status:
 
 ![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/b86986f8-9e7c-458a-9d73-26f9db435548)
 
-4. Explore the data quality tests
+###4. Explore the data quality tests
 Inspect the `mytests.py` which contains all the data quality tests.
 
 The testing framework provides the following tests:
