@@ -14,13 +14,15 @@ The primary purpose of this lab is to instruct participants on the process of co
 - Check Invalid values
 - Generate a report on data quality
 
-## Instructions: 
-###1. Run the setup script
+## Instructions:
+
+1. Run the setup script
     ```
     bash setup_staging_area.sh
     ```
     
-###2. Get the testing framework ready
+2. Get the testing framework ready
+   
   2.1. Download the framework
 
   Run the commands below to download the framework:
@@ -57,7 +59,8 @@ The primary purpose of this lab is to instruct participants on the process of co
 
   The command also disconnects from the server with a message `Connection closed`.
   
-###3. Create a sample data quality report 
+3. Create a sample data quality report
+
 Run the command below to install pandas:
   ```
   python3 -m pip install pandas tabulate
@@ -70,7 +73,8 @@ You should see a list of tests that were run and their status:
 
 ![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/b86986f8-9e7c-458a-9d73-26f9db435548)
 
-###4. Explore the data quality tests
+4. Explore the data quality tests
+   
 Inspect the `mytests.py` which contains all the data quality tests.
 
 The testing framework provides the following tests:
