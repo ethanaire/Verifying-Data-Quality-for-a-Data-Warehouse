@@ -65,6 +65,30 @@ You should see a list of tests that were run and their status:
 
 ![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/b86986f8-9e7c-458a-9d73-26f9db435548)
 
+4. Explore the data quality tests
+Inspect the `mytests.py` which contains all the data quality tests.
+
+The testing framework provides the following tests:
+- check_for_nulls - this test will check for nulls in a column
+- check_for_min_max - this test will check if the values in a column are with a range of min and max values
+- check_for_valid_values - this test will check for any invalid values in a column
+- check_for_duplicates - this test will check for duplicates in a column
+
+Each test can be authored by mentioning a minimum of 4 parameters.
+- testname - The human readable name of the test for reporting purposes
+- test - The actual test name that the testing micro framework provides
+- table - The table name on which the test is to be performed
+- column - The table name on which the test is to be performed
+
+We can customize our own tests and create new tests if wamted. 
+
+For example, Let us now create a `new check_for_duplicates` test and run it.
+The test below checks for any duplicate values in the column `customerid` in the table `DimCustomer`.
+The test fails if duplicates exist.
+
+![image](https://github.com/ethanaire/Verifying-Data-Quality-for-a-Data-Warehouse-Lab/assets/88173327/707caf0b-7de3-4a9d-8eef-3a2e3144d15b)
+
+
 
 
 
